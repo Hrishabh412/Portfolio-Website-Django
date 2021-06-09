@@ -27,7 +27,7 @@ SECRET_KEY = 'jby12es5lt)-@p=w@5-c=i4gbrl0n(uvef6^^bec&idug24hf5'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'rishabhk412.herokuapp.com','localhost'
+    'rishabhk412.herokuapp.com','127.0.0.1'
 ]
 
 
@@ -127,5 +127,5 @@ STATIC_URL = '/static/'
 STATIC_ROOT= os.path.join(BASE_DIR , 'staticfiles')
 
 STATICFILES_DIRS=[
-    os.path.join(BASE_DIR,'static'),
+    os.path.join(BASE_DIR,'static')
 ]
