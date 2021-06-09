@@ -1,0 +1,67 @@
+
+body{
+    background-color: #F8F8FF ;
+}
+#profile-wrapper{
+    text-align: center;
+}
+
+#profile-pic{
+    width: 220px ;
+    height:220px ;
+    border-radius: 50% ;
+    margin-left: auto;
+    margin-right: auto;
+}
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+small, .small {
+    font-size: 80%;
+    font-weight: 400;
+}
+ /* set two lists side by side */
+
+ul.col li.flot
+{
+float: left;
+width: 14em;
+}  
+
+/* separate the list from subsequent markup */
+div.new 
+{
+margin-bottom: 2em;
+}
+.bottom {
+        position: absolute;
+        bottom: 0;
+        left: 5px;
+      }
+.logo_image {
+    width: 20px;
+    height: 20px;
+}
+.ul-img .flot1 {
+    float: left;
+    padding:0;
+    list-style-type: none;
+    display:inline-block; 
+}
+.ul-img{
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+}
+.logo_image2{
+    width: 60px;
+    height:60px;
+}
+.ul-img2 .flot2{
+    float: left;
+    list-style-type: none; 
+
+}
+#container1{
+    text-align:center;
+}

@@ -1,0 +1,264 @@
+
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+<!--{% load static %}-->
+
+
+<!-- We can also use JINJA format here, instead of giving static path. 
+In JINJA format we done need to set path of templets folder in settings.py -->
+<!-- {% static 'img/login.jpg' %} "Refer first line to get rid of error for loading the static" -->
+<!-- {% static "css/main.css"%}-->
+
+<!-- -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishabh</title>
+        <link href='/static/css/main.css' rel='stylesheet'>
+    <!-- load Boothstap CDN-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<style>
+body{
+    background-color: #F8F8FF ;
+}
+#profile-wrapper{
+    text-align: center;
+}
+
+#profile-pic{
+    width: 220px ;
+    height:220px ;
+    border-radius: 50% ;
+    margin-left: auto;
+    margin-right: auto;
+}
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+small, .small {
+    font-size: 80%;
+    font-weight: 400;
+}
+ /* set two lists side by side */
+
+ul.col li.flot
+{
+float: left;
+width: 14em;
+}  
+
+}  /* separate the list from subsequent markup */
+div.new 
+{
+margin-bottom: 2em;
+}
+.bottom {
+        position: absolute;
+        bottom: 0;
+        left: 5px;
+        
+      }
+.logo_image {
+    width: 20px;
+    height: 20px;
+}
+.ul-img .flot1 {
+    float: left;
+    padding:0;
+    list-style-type: none;
+    display:inline-block; 
+}
+.ul-img{
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+}
+.logo_image2{
+    width: 60px;
+    height:60px;
+}
+.ul-img2 .flot2{
+    float: left;
+    list-style-type: none; 
+
+}
+#container1{
+    text-align:center;
+}
+
+</style>
+<body>
+    <div class="container my-2" style="padding-top:50px">
+        <div class='row'>
+            <div class='col-md-3' >
+                <div class='card card-body h-100 border-info' id="profile-wrapper">
+                    <img src="/static/img/IMG.1.JPG" alt="..." id="profile-pic">
+                    <hr>
+                    <h3>Hi, I'm Rishabh!</h3>
+                    <p>Say, "Hi" and Let's Start.</p>
+                    </div>
+            </div>
+            <div class='col-md-9'>
+                <div class='card card-body h-100 border-info'>
+                    <h2 style='text-align:center; '>More About Me...</h2>
+                    <p style="font-size:18px; line-height:1.5"> Hi, I'm Rishabh. With 2+ years of experience, Currently working in Infosys Ltd as a System Engineer. 
+                    Here Working in CSS-IAM team for Temasek International Pvt Ltd, Singapore. </p>
+                    <p style="font-size:18px; line-height:1.4 ;margin-right:20px">Apart from this, currently I'm working on Django framework & Python on my own. Working on my own Projects.</p>
+                    <p style="font-size:18px; line-height:.5">An Engineer, Full Stack Developer, Traveller, Naive Illustrator and More to Go.</p>
+                     
+                    
+                    <div class='row'>
+                        <ul class='ul-img'>
+                            <li class='flot1'><a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.facebook.com/hrishabh.soni.376/" target="_blank" rel="tooltip" title="Follow me on Facebook">
+                                    <img class="logo_image" src="static/img/facebook.png">
+                                </a></li>
+                            <li class='flot1'><a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.instagram.com/xrishabhsoni/" target="_blank"  title="Follow me on Instagram">
+                                    <img class="logo_image" src="static/img/instagram.jpg">
+                                </a></li>
+                            <li class='flot1'><a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.linkedin.com/in/rishabhkumar04/" target="_blank" rel="tooltip" title="Follow me on Linkedin">
+                                    <img class="logo_image" src="static/img/Linkedin.png">
+                                </a></li>
+                            <li class='flot1'><a class="btn btn-default btn-round btn-lg btn-icon" href="https://github.com/Hrishabh412" target="_blank" rel="tooltip" title="Follow me on Github">
+                                    <img class="logo_image" src="static/img/github.png">
+                                </a></li>
+                            <li class='flot1'><a class="btn btn-default btn-round btn-lg btn-icon" href="https://twitter.com/Rishabhkumar412" target="_blank" rel="tooltip" title="Follow me on Github">
+                                    <img class="logo_image" src="static/img/twitter.png">
+                                </a></li>
+                        </ul> 
+                    </div>           
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class='row'>
+            <div class='col-md-6'>
+                <div class='card card-body h-100 border-info '>
+                    <h3 style='text-align:center;'>Educational Qualification</h3>
+                    <ul>
+                        <li><strong >B.Tech in Information Technology (2019):</strong> Jaipur Engineering College and Research Centre  with 69.93% aggregate score. </li>
+                        <li><strong>Higher Secondary (2014):</strong> Chandra Sen Sec School, Hindaun city with 72.40% marks.</li>
+                        <li><strong>Secondary (2012):</strong> Jamuna Vidhya Mandir, Hindaun city with 84.85% marks.</li>
+                    </ul> 
+
+                </div>
+            </div>
+            <div class='col-md-6'>
+                <div class='card card-body h-100 border-info'>
+                    <h3 style='text-align:center;'>Experience</h3>
+                    <ul>
+                        <li><strong>Infosys Ltd (Jan 2020 – Currently working): </strong> I am currently working as System Engineer. </li>
+                        <li><strong>Intern, Adhoc Networks Pvt Ltd (Apr 2018- July 2018): </strong> 
+                            Got training in Python and Machine learning, worked as an Intern. </li>
+                        <li><strong>Intern, Lawnics Technologies Pvt ltd (Sept 2019- January 2019):</strong> Did Research and Development on different Python Libraries and algorithms.</li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class='row'>
+            <div class='col-md-6'>
+                <div class='card card-body h-100 border-info'>
+                    <h4 style='text-align:center;'>Soft Skills</h4>
+                       <ul >
+                            <li><h2 class="small font-weight-bold" style="font-size:15px">Problem Solving &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <progress id="file" value="70" max="100"></progress><span class="float-right">70%</span></h2></li>
+                            <li><h2 class="small font-weight-bold" style="font-size:15px">Team Work &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <progress id="file" value="80" max="100"> </progress><span class="float-right">80%</span></h2></li>
+                            <li><h2 class="small font-weight-bold" style="font-size:15px">Multitasking &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <progress id="file" value="70" max="100"></progress><span class="float-right">70%</span></h2></li>
+                            <li><h2 class="small font-weight-bold" style="font-size:15px">Communication &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <progress id="file" value="70" max="100"></progress><span class="float-right">70%</span></h2></li>
+                        </ul> 
+
+                    <h4 style='text-align:center;'>Hard Skills</h4>
+                    <div class='new'>
+                        <ul class='col'>
+                            <li class='flot'><h2 class="small font-weight-bold" style="font-size:15px">Full Stack developer  </h2></li>
+                            <li class='flot'><h2 class="small font-weight-bold" style="font-size:15px">Sql</h2></li>
+                            <li class='flot'><h2 class="small font-weight-bold" style="font-size:15px">Python </h2></li>
+                            <li class='flot'><h2 class="small font-weight-bold" style="font-size:15px">Linux Commands (Basic)</h2></li>
+                        </ul>
+                    </div>
+                    <div class='new'>
+                        <ul class='col'>
+                            <li class='flot'><h2 class="small font-weight-bold" style="font-size:15px">Djnago  </h2></li>
+                            <li class='flot'><h2 class="small font-weight-bold" style="font-size:15px">Machine Learning</h2></li>
+                            <li class='flot'><h2 class="small font-weight-bold" style="font-size:15px">HTML-CSS </h2></li>
+                            <li class='flot'><h2 class="small font-weight-bold" style="font-size:15px">Cyber-Security</h2></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class='col-md-6'>
+                <div class='card card-body h-100 border-info'>
+                    <h4 style='text-align:center;'>Published Papers</h4>
+                        <ul class='ul-style' style='color:#1E71EC'>
+                            <li class='li-style'><a href='http://www.ijcea.com/wp-content/uploads/2018/08/76-publish_paper_material.pdf' target="_blank"><strong style="font-size:20px">Green Cloud Computing And Virtualization.</strong> </a></li>
+                            <li class='li-style'><a href="http://www.ijaconline.com/wp-content/uploads/2019/06/ICITDA_2019_paper_42.pdf" target="_blank"><strong style="font-size:20px">Clustering Based Image Segmentation Techniques.</strong></a>  </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class='row' style="margin-bottom:30px">
+            <div class='col-md-6'>
+                <div class='card card-body h-100 border-info'>
+                    <h4 style='text-align:center;'>Certifications</h4>
+                        <ul style='color:#1E71EC'>
+                            <li class='li-style'><a href='https://drive.google.com/drive/folders/1xm8Ci3-utVUYfaGL-eElgMt34UT9rFva?usp=sharing' target="_blank"><strong style="font-size:20px">Python Certified from Coursera.</strong> </a></li>
+                            <li class='li-style'><a href="https://drive.google.com/file/d/1sAW4qJWdAHqswb0Nhsepo0qFw7EGPWFG/view?usp=sharing" target="_blank"><strong style="font-size:20px">CyberSecurity Certification from Purdue University.</strong></a>  </li>
+                            <li class='li-style'><a href="https://drive.google.com/file/d/1s54fq4aVooCupPTAadEG5snvzz9LeC7L/view?usp=sharing" target="_blank"><strong style="font-size:20px">Azure Fundamentals Certification (AZ-900).</strong></a>  </li>
+                        </ul>
+                </div>
+            </div>
+            <div class='col-md-6'>
+                <div class='card card-body h-100 border-info'>
+                    <h4 style='text-align:center;'>Curriculum Vitae</h4>
+                    
+                    <a class="btn btn-default btn-round btn-lg btn-icon" style='color:#1E71EC' href="https://drive.google.com/file/d/1e0tY-uq2r_wwn3HTVQ1hS97RnBjJ3UCt/view?usp=sharing"  target="_blank" >
+                    <h7 style='text-align:center; font-weight:bold'>Download CV</h7>
+                    </a>   
+                </div>
+            </div>
+        </div>
+
+        <div class='row'>
+            <div class='col-md-12'>
+                <div class='card card-body h-100 border-info'>
+                    <h3 style='text-align:center;'>Contact</h3>
+                    <h7 style='text-align:center; font-weight:bold'>Let's Be Friends!</h7><br>
+                    <div class='row'>
+                        <ul class='ul-img2' style="list-style-type:none">
+                                <li class='flot2' style="width:30%;"><a class="btn btn-default btn-round btn-lg btn-icon" href="tel:+91-91413-40552"  target="_blank" >
+                                        <img class="logo_image2" src="static/img/call.jpg">&nbsp;&nbsp;<br><b>+91 8764124447</a></li>
+                                <li class='flot2' style="width:33%;"><a class="btn btn-default btn-round btn-lg btn-icon" href="mailto:hrishabhsoni412@gmail.com"  target="_blank">
+                                        <img class="logo_image2" src="static/img/mail.png">&nbsp;&nbsp;<br><b>Hrishabhsoni412@gmail.com</a> </li>
+                                <li class='flot2' style="width:30%;"><a class="btn btn-default btn-round btn-lg btn-icon" href="https://maps.app.goo.gl/bA4cER4mc5hN5mSf8" target="_blank" >
+                                        <img class="logo_image2" src="static/img/address.png"> <br>
+                                            <address><b>
+                                            <div style="font-size:18px">120, Behind New Mandi, Bhartiya Colony,</div>
+                                            <div style="font-size:18px">Hindaun City,</div>
+                                            <div style="font-size:18px">Rajasthan 322230,</div>
+                                            <div style="font-size:18px">India</div></b>
+                                            </address>                                                       
+                            </li>
+                        </ul>
+                        <p class='bottom' style="font-size:12px; "> *Note - Click on Links for more details.</p>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+
+        <footer >
+            <div id="container1"><div class="small text-muted" >  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                        &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                                                        Copyright © 2021 All rights reserved | Made By Rishabh Kumar Swarnkar</div></div>
+        </footer>
+    
+</body>
+{% endblock body %}

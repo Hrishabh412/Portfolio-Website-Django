@@ -1,0 +1,46 @@
+body{
+    background-color:green ;
+}
+#profile-wrapper{
+    text-align: center;
+}
+
+.profile-pic{
+    width: 150px ;
+    height: 150px ;
+    border-radius:50% ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    background-color: #F8F8FF ;
+}
+#profile-wrapper{
+    text-align: center;
+}
+
+#profile-pic{
+    width: 160px ;
+    height: 160px ;
+    border-radius: 50% ;
+    margin-left: auto;
+    margin-right: auto;
+}
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+small, .small {
+    font-size: 80%;
+    font-weight: 400;
+}
+
+ul, li{
+    margin:0;
+    padding:0 0 0 15px;    
+    }
+    
+.column{
+    float: left;
+    margin: 0 20px 0 0;
+}
