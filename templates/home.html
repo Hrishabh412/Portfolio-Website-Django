@@ -90,11 +90,23 @@ margin-bottom: 2em;
     text-align:center;
 }
 
+
+.compact{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.compact::after{
+    content:'';
+    display:block;
+    clear:both;
+}
 </style>
 <body>
     <div class="container my-2" style="padding-top:50px">
         <div class='row'>
-            <div class='col-md-3' >
+            <div class='col-md-3'>
                 <div class='card card-body h-100 border-info' id="profile-wrapper">
                     <img src="/static/img/profile.jpg" alt="..." id="profile-pic">
                     <hr>
@@ -221,17 +233,17 @@ margin-bottom: 2em;
         </div>
 
         <div class='row'>
-            <div class='col-md-12'>
+            <div class='col-md-12 compact'>
                 <div class='card card-body h-100 border-info'>
                     <h3 style='text-align:center;'>Contact</h3>
                     <h7 style='text-align:center; font-weight:bold'>Let's Be Friends!</h7><br>
                     <div class='row'>
                         <ul class='ul-img2' style="list-style-type:none">
-                                <li class='flot2' style="width:29%;"><a class="btn btn-default btn-round btn-lg btn-icon" href="tel:+91-87641-24447"  target="_blank" >
+                                <li class='flot2' style="width:30%;"><a class="btn btn-default btn-round btn-lg btn-icon" href="tel:+91-87641-24447"  target="_blank" >
                                         <img class="logo_image2" src="static/img/call.jpg"><br><b>+91 8764124447</a></li>
-                                <li class='flot2' style="width:32%;"><a class="btn btn-default btn-round btn-lg btn-icon" href="mailto:hrishabhsoni412@gmail.com"  target="_blank">
+                                <li class='flot2' style="width:30%;"><a class="btn btn-default btn-round btn-lg btn-icon" href="mailto:hrishabhsoni412@gmail.com"  target="_blank">
                                         <img class="logo_image2" src="static/img/mail.png"><br><b>Hrishabhsoni412@gmail.com</a> </li>
-                                <li class='flot2'><a class="btn btn-default btn-round btn-lg btn-icon" href="https://maps.app.goo.gl/bA4cER4mc5hN5mSf8" target="_blank" >
+                                <li class='flot2' style="width:33%><a class="btn btn-default btn-round btn-lg btn-icon" href="https://maps.app.goo.gl/bA4cER4mc5hN5mSf8" target="_blank" >
                                         <img class="logo_image2" src="static/img/address.png"> <br>
                                             <address><b>
                                             <div style="font-size:18px">120, Behind New Mandi, Bhartiya Colony,</div>
